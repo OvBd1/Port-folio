@@ -74,7 +74,7 @@ ul > li {
 section {
     width: 1020px;
     height: 100vh;
-    padding-top: 8rem;
+    padding-top: 6rem;
     margin: auto;
 }
 
@@ -122,7 +122,7 @@ section {
 }
 
 table {
-    margin: auto;
+    
     width: 65vw;
 }
 
@@ -136,5 +136,48 @@ td {
 }
 
 .profil{
-    width: 10rem;
+    width: 12rem;
+}
+
+#contact img {
+    width: 38rem;
+}
+
+#contact .container {
+    display: flex;
+
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 36rem;
+    border: solid 1px #253a62;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+label {
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+input[type="submit"] {
+    margin-top: 1rem;
+    background-color: #253a62;
+    color: white;
+}
+
+#contact form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: solid #253a62 1px;
+}
+
+textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: solid #253a62 1px;
 }
