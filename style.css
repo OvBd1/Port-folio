@@ -207,6 +207,13 @@ footer p {
 .icons-rs {
     position: absolute;
     bottom: 2rem;
-    right: 2rem;
-     
+    right: 2rem; 
 }
+
+@media screen and (max-width: 480px) {
+    nav {
+        display: none;
+    }
+    
+}
+
