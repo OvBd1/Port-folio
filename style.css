@@ -181,3 +181,32 @@ textarea {
     border-radius: 20px;
     border: solid #253a62 1px;
 }
+
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(/Images/wave-footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+
+}
+
+footer img {
+    width: 2rem;
+}
+
+footer p {
+    color: white;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.icons-rs {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+     
+}
