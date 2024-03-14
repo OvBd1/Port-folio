@@ -10,21 +10,16 @@ dark-blue: #253a62
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-image: url(./Images/blue-pale.svg);
-    background-repeat: no-repeat;
-}
-
 a {
     text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-size: 2.5rem;
-}
-
-span {
-    font-weight: lighter;
 }
 
 li {
@@ -32,6 +27,7 @@ li {
 }
 
 .logo {
+    margin: 2rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -42,21 +38,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    /* From https://css.glass */
+    background: #c04b448e;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 header > a {
     margin-left: 1rem;
     height: 2rem;
-    transition: text-decoration 1s ease-in-out;
-}
-
-a {
-    transition: text-decoration 1s ease-in-out;
 }
 
 a:hover {
     text-decoration: underline;
     text-underline-offset: 10px;
+    transition: text-decoration 3s;
 }
 
 nav {
@@ -72,125 +71,41 @@ ul > li {
 }
 
 section {
-    width: 1020px;
     height: 100vh;
-    padding-top: 6rem;
-    margin: auto;
-}
-
-.cowork {
-    width: 40rem;
-    height: 25rem;
+    /* padding-top: 6rem; */
+    margin: 0;
 }
 
 #accueil {
+
     display: flex;
-    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #af443f ;
 }
 
-#accueil .left {
-    width: 600px;
-}
-
-.btn {
+.btn-signup {
     border: solid #253a62 1px;
     padding: 10px;
     border-radius: 20px;
+    text-decoration: none;
 }
 
-#services {
-    text-align: center;
-}
-
-#services .cards {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    column-gap: 2rem;
-}
-
-#services img{
-    width: 17rem;
-    height: 12rem;
-}
-
-#service p {
-    text-align: justify;
-}
-
-#projets .titre {
-    text-align: center;
-}
-
-table {
-    
-    width: 65vw;
-}
-
-td {
-    padding: 1rem;
-}
-
-#contact > h1 {
-    display: flex;
-    justify-content: center;
-}
-
-.profil{
-    width: 12rem;
-}
-
-#contact img {
-    width: 38rem;
-}
-
-#contact .container {
-    display: flex;
-
-}
-
-#contact form {
-    display: flex;
-    flex-direction: column;
-    width: 36rem;
-    border: solid 1px #253a62;
-    border-radius: 20px;
-    padding: 1rem;
-}
-
-label {
-    font-weight: 900;
-    margin-bottom: 0.5rem;
-}
-
-input[type="submit"] {
-    margin-top: 1rem;
+.btn-signup:hover {
     background-color: #253a62;
+    text-decoration: none;
     color: white;
 }
 
-#contact form input {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border-radius: 20px;
-    border: solid #253a62 1px;
-}
-
-textarea {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border-radius: 20px;
-    border: solid #253a62 1px;
-}
-
 footer {
-    width: 100vw;
     display: flex;
     justify-content: space-between;
     background-image: url(/Images/wave-footer.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 20rem;
-
 }
 
 footer img {
@@ -203,17 +118,3 @@ footer p {
     bottom: 2rem;
     left: 2rem;
 }
-
-.icons-rs {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem; 
-}
-
-@media screen and (max-width: 480px) {
-    nav {
-        display: none;
-    }
-    
-}
-
